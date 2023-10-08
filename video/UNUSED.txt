@@ -1,0 +1,1 @@
+This file is only here because the video folder wouldn't show up in the repo otherwise since I have no files in here. 
