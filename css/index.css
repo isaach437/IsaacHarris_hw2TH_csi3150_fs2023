@@ -1,0 +1,19 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 250px;
+  background-color: #50b0b2;
+  height: 82vh;
+}
+
+.header {
+  align-self: center;
+}
+
+.image {
+  align-self: center;
+}
+
+footer {
+  background-color: rgb(74, 155, 155);
+}
