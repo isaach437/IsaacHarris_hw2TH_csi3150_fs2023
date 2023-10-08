@@ -5,14 +5,34 @@
     <meta name="viewport" content="width=device-with, initial-scale=1.0" />
     <title>Isaac's Site</title>
     <link rel="icon" type="image/png" href="img/favicon.png" />
+    <!--CSS File-->
+    <link rel="stylesheet" href="css/NavbarSyle.css" />
   </head>
 
   <body>
     <!-- This is the navbar-->
-    <nav>
-      <a href="">Home</a>
+    <nav class="navbar">
+      <!--Logo container-->
+      <div class="logo">
+        <img src="img/favicon.png" alt="Logo" width="50px" height="50px" />
+      </div>
+
+      <!--Navigation Container-->
+      <ul class="nav-links">
+        <!--Hamburger menu icon and checkbox-->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!--Nav Menu Options-->
+        <div class="nav-items">
+          <li><a href="">Home</a></li>
+          <li><a href="html/my_resume.html">Resume</a></li>
+          <li><a href="html/my_fun_facts.html">Fun Facts</a></li>
+        </div>
+      </ul>
+      <!--<a href="">Home</a>
       <a href="html/my_resume.html">Resume</a>
-      <a href="html/my_fun_facts.html">Fun Facts</a>
+      <a href="html/my_fun_facts.html">Fun Facts</a>-->
     </nav>
 
     <hr />

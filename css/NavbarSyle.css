@@ -1,0 +1,104 @@
+/*Design a responsive navbar*/
+
+/* reset all browser styling and choose alt box model option*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/*Style the layout of the navbar*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(74, 155, 155);
+  color: white;
+}
+
+.nav-links a {
+  color: black;
+}
+
+/*Style the navbar menu*/
+
+.nav-items {
+  display: flex;
+
+  gap: 1em;
+  font-size: 18px;
+}
+
+/*example of pseudo class usage in CSS (css if statements)*/
+
+.nav-items li:hover {
+  font-size: 20px;
+  background-color: rgb(71, 141, 141);
+  border-radius: 5px;
+
+  /*example of css transition*/
+  transition: 0.3s ease;
+}
+
+.nav-items li {
+  padding: 5px 14px;
+}
+
+/*responsive styling of navbar*/
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/*responsive design w/ media queries*/
+
+@media (max-width: 768px) {
+  .nav-items {
+    display: none;
+    position: absolute;
+    background-color: teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .nav-items li:hover {
+    display: inline-block;
+    background-color: teal;
+    transition: 0.3s ease;
+  }
+
+  .nav-items li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .nav-items {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
